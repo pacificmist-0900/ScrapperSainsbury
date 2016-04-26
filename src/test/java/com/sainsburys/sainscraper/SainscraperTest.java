@@ -101,8 +101,9 @@ public class SainscraperTest {
     	StringBuilder result = new StringBuilder("");
         java.net.URL url = SainscraperTest.class.getResource(file);
         File productFile = new File(url.getFile());
-        try (Scanner scanner = new Scanner(productFile)) {
-
+        Scanner scanner=null;
+        try  {
+        	 scanner = new Scanner(productFile);
     		while (scanner.hasNextLine()) {
     			String line = scanner.nextLine();
     			result.append(line).append("\n");
@@ -113,6 +114,10 @@ public class SainscraperTest {
     	} catch (IOException e) {
     		e.printStackTrace();
     	}
+        finally{
+        	if(scanner != null)
+        	scanner.close();
+        }
         return result.toString();
     }
 

@@ -55,9 +55,9 @@ execute
 
 After that you can run the application with simple:
 
-    java -jar target/sainscraper-1.0-SNAPSHOT.jar
+    java -jar target/SainsburyScraper-1.0-SNAPSHOT.jar
 
-The sainscraper-1.0-SNAPSHOT.jar can then be copied anywhere and executed independently. 
+The SainsburyScraper-1.0-SNAPSHOT.jar can then be copied anywhere and executed independently. 
 
 testing
 -------
