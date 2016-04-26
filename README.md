@@ -43,8 +43,8 @@ running the application
 The simplest way to run the application is to clone the repository, and use Maven to compile and run it:
 
     cd /tmp
-    git clone git@github.com:pacificmist-0900/ScrapperSainsbury.git
-    cd sainscraper
+    git clone https://github.com/pacificmist-0900/ScrapperSainsbury
+    cd ScrapperSainsbury
     mvn compile
     mvn exec:java
 
